@@ -1,3 +1,9 @@
+:root{
+  --first-color: #b6bfe1;
+  --second-color: #787cba;
+  --third-color: #4f55a3;
+}
+
 body {
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
   }
@@ -22,13 +28,13 @@ body {
 .top-hidden{
   height: 100vh;
   width: 100vw;
-  background-color: #ece9e8;
+  background-color: var(--first-color);
 }
 
 .profile{
   width: 100vw;
   height: 100vh;
-  background-color: #ece9e8;
+  background-color: var(--first-color);
   border-bottom-left-radius: 30% 10%;
   border-bottom-right-radius: 30% 10%;
   float: left;
@@ -57,7 +63,7 @@ body {
 
 li{
   list-style: none;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 p{
@@ -70,17 +76,18 @@ p{
 .profile-hidden{
   height: 100vh;
   width: 100vw;
-  background-color: #95cbcb;
+  background-color: var(--second-color);
 }
 
 .skill{
   height: 100vh;
   width: 100vw;
-  background-color: #95cdcd;
+  background-color: var(--second-color);
   border-bottom-left-radius: 30% 10%;
   border-bottom-right-radius: 30% 10%;
   float: left;
   position: relative;
+  color: white;
 }
 
 .skill-head{
@@ -113,13 +120,14 @@ span{
 .skill-hidden{
   width: 100vw;
   height: 100vh;
-  background-color: #82a2c7;
+  background-color: var(--third-color);
 }
 
 .deliverable{
   width: 100vw;
-  height: 200vh;
-  background-color: #82a2c7;
+  height: 250vh;
+  background-color: var(--third-color);
+  color: white;
 }
 
 .deliverable-head{
@@ -130,11 +138,63 @@ span{
   font-size: 50px;
 }
 
-.delivaerable-first{
+.delivaerable-contents{
   width: 80%;
-  height: 70%;
-  border: 1px solid;
-  margin: 30px auto;
+  height: 100vh;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-image{
+  width: 45%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.content-image .caption{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.content-image .mask{
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-wrap{
+  overflow: hidden;
+  background: #000;
+}
+
+.scale-img{
+  transition-duration: 0.6s;
+}
+
+.scale-img:hover{
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+
+.content{
+  font-size: 20px;
+  width: 45%;
+  margin-top: 50px;
+}
+
+ul.skills{
+  padding: 0;
+  line-height: 1.5;
+}
+
+.topic{
+  margin-bottom: 30px;
 }
 
 .footer{
@@ -150,13 +210,13 @@ span{
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #ece9e8;
-  border: 2px solid #ece9e8;
+  color: var(--first-color);
+  border: 2px solid var(--first-color);
   border-radius: 3px;
 }
 
 #sec1:hover{
-  background-color: #ece9e8;
+  background-color: var(--first-color);
   color: white;
 }
 
@@ -164,13 +224,13 @@ span{
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #95cbcb;
-  border: 2px solid #95cbcb;
+  color: var(--second-color);
+  border: 2px solid var(--second-color);
   border-radius: 3px;
 }
 
 #sec2:hover{
-  background-color: #95cbcb;
+  background-color: var(--second-color);
   color: white;
 }
 
@@ -178,12 +238,13 @@ span{
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #82a2c7;
-  border: 2px solid #82a2c7;
+  color: white;
+  border: 2px solid var(--third-color);
   border-radius: 3px;
 }
 
 #sec3:hover{
-  background-color: #82a2c7;
+  background-color: var(--third-color);
   color: white;
 }
+
