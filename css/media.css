@@ -1,0 +1,66 @@
+@media screen and (max-width: 480px) {
+  
+  .top{
+    background-image: url("../images/media.jpg");
+  }
+
+  #sec1{
+    background-color: #fff;
+  }
+
+  .profile-main{
+    padding: 40px;
+  }
+
+  .detail{
+    padding: 0;
+    width: 100%;
+  }
+
+  .profile-main p{
+    width: 100%;
+  }
+
+  .skill-head{
+    padding-top: 50px;
+  }
+
+  .skill-detail{
+    width: 100%;
+  }
+
+  .skill-detail ul{
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .skill-detail li{
+    margin: 0 0 50px 0;
+  }
+
+  span{
+    float: left;
+  }
+
+  .deliverable{
+    height: 350vh;
+  }
+
+  .deliverable-head{
+    padding-top: 30px;
+  }
+
+  .delivaerable-contents{
+    display: block;
+    height: 150vh;
+  }
+
+  .content-image{
+    width: 100%;
+  }
+
+  .content{
+    width: 100%;
+  }
+}
