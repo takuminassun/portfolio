@@ -1,57 +1,56 @@
 @media screen and (max-width: 480px) {
-  
-  .top{
-    background-image: url("../images/media.jpg");
-  }
 
-  #sec1{
-    background-color: #fff;
-  }
-
-  .profile-main{
-    padding: 40px;
-  }
-
-  .detail{
-    padding: 0;
-    width: 100%;
-  }
-
-  .profile-main p{
-    width: 100%;
-  }
-
-  .skill-head{
-    padding-top: 50px;
-  }
-
-  .skill-detail{
-    width: 100%;
-  }
-
-  .skill-detail ul{
-    padding: 20px;
-    margin: 0;
+  .nav-bar ul{
     text-align: center;
   }
 
-  .skill-detail li{
-    margin: 0 0 50px 0;
+  .nav-bar li{
+    padding: 0 10px;
+  }
+  
+  .home{
+    background-image: url("../images/media.jpg");
   }
 
-  span{
-    float: left;
+  .home-body{
+    padding: 0;
+    line-height: 100vh;
   }
 
-  .deliverable{
+  .footer{
+    display: none;
+  }
+
+  .about{
+    height: 160vh;
+  }
+
+  .about-main{
+    display: block;
+  }
+
+  .about-me{
+    width: 100%;
+  }
+
+  .about-skill{
+    width: 100%;
+  }
+
+  .detail{
+    width: 100%;
+  }
+
+  .about-me p{
+    margin: 0;
+    width: 100%;
+  }
+
+  .works{
     height: 350vh;
   }
 
-  .deliverable-head{
-    padding-top: 30px;
-  }
-
-  .delivaerable-contents{
+  .works-contents{
     display: block;
     height: 150vh;
   }
@@ -62,5 +61,13 @@
 
   .content{
     width: 100%;
+  }
+
+  .contact-logo{
+    width: 100%;
+  }
+
+  .icon{
+    padding: 0 30px;
   }
 }
