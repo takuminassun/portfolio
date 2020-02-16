@@ -14,6 +14,7 @@ body {
   position: fixed;
   background-color: #fff;
   z-index: 1;
+  border-bottom: 2px solid #eee;
 }
 
 .nav-bar ul{
